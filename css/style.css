@@ -1,0 +1,31 @@
+h6{
+	text-align: end;
+}
+#sort{
+	height: 50px;
+}
+#shop{
+	display: flex;
+	justify-content: space-between;
+}
+#quantity{
+	width: 175px;
+}
+#price{
+	font-size: 30px;
+}
+#accordion2{
+	display: flex;
+	justify-content: flex-start;
+}
+#about{
+	font-size: 30px;
+}
+#rec{
+	height: 55px;
+	font-size: 20px;
+	text-align: center;
+}
+.card{
+	width: 300px;
+}
