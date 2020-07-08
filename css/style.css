@@ -26,6 +26,24 @@ h6{
 	font-size: 20px;
 	text-align: center;
 }
-.card{
-	width: 300px;
+#activity, #settings{
+	text-decoration: none;
+}
+#add, #add2{
+	display: flex;
+	justify-content: flex-end;
+}
+.activities{
+	font-size: 30px;
+}
+.product_name{
+	text-decoration: none;
+}
+.info{
+	align-self: center;
+	font-size: 17px;
+}
+.details{
+   display: flex;
+   justify-content: space-between;
 }
