@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <title>Product</title>
+  <title>Place order</title>
 </head>
 <body>
 
@@ -134,179 +134,152 @@
 </div>
 </div>
 
-<nav aria-label="breadcrumb" class="col-md-6 col-lg-8 col-xl-9 p-0 d-none d-md-block">
-  <ol class="breadcrumb bg-white">
-    <li class="breadcrumb-item"><a href="index.html" class="text-success">Home</a></li>
-    <li class="breadcrumb-item"><a href="shop.html" class="text-success">Fruits</a></li>  
-    <li class="breadcrumb-item"><a href="shop.html" class="text-success">Apples & pears</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Organic red apple</li>
-  </ol>
-</nav>
-
-
 <div class="container-fluid">
-  <h3 class="text-dark">Organic red apple</h3><hr>
-  <div class="row">
-    <div  class="col-12 col-lg-7">
-      <div class="row">
-        <div class="col-2 d-flex flex-column align-items-center">
-          <a data-fancybox="gallery" href="img/apple.jpg"><img src="img/apple.jpg" class="img-fluid mb-2"></a>
-          <a data-fancybox="gallery" href="img/apple1.jpg"><img src="img/apple1.jpg" class="img-fluid mb-2"></a>
-          <a data-fancybox="gallery" href="img/apple4.jpg"><img src="img/apple4.jpg" class="img-fluid mb-2"></a>
-          <a data-fancybox="gallery" href="img/apple3.jpg"><img src="img/apple3.jpg" class="img-fluid mb-2"></a>
-        </div>
-        <div class="col-10">
-          <img src="img/apple.jpg" class="img-fluid">
-        </div>
-      </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb bg-white">
+      <li class="breadcrumb-item"><a href="cart.html" class="text-success">Cart</a></li>
+      <li class="breadcrumb-item"><a href="payment.html" class="text-success">Payment method</a></li>
+      <li class="breadcrumb-item"><a href="address.html" class="text-success">Shipping address</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Place order</li>
+    </ol>
+  </nav>
+  <div class="modal-body">
+    <div class="row border-top">
+      <p class="info categories mt-3 pl-5 col-2 col-sm-1"><strong>#</strong></p>
+      <p class="info categories mt-3 pl-5 pr-0 col-7 col-sm-6 col-md-5 col-lg-6"><strong>Product</strong></p>
+      <p class="info categories mt-3 pl-0 pr-0 col-sm-2 col-lg-1 d-none d-sm-block"><strong>Price</strong></p>
+      <p class="info categories mt-3 pl-0 pr-5 col-sm-2 d-none d-sm-block"><strong>Quantity</strong></p>
     </div>
 
-    <div class="col-12 col-lg-5">
-      <p id="price">10$/kg</p>
-      <div class="input-group mb-3" id="quantity">
-        <div class="input-group-prepend">
-          <span class="input-group-text">Quantity</span>
-        </div>
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="1kg">
-      </div>
-
-      <div>
-        <button type="button" class="btn btn-success">BUY NOW</button>
-        <button type="button" class="btn btn-success">Add to cart</button>
-      </div>
-
-      <div class="mt-5">
-        <h4>Short description</h4><hr>
-        <ul>
-          <li>Gluten FREE</li>
-          <li>Lactose FREE</li>
-          <li>NO gmo</li>
-        </ul>
-        <h4 class="mt-5">Storage and Uses</h4><hr>
-        <ul>
-          <li>Store them in a cool, dry place away from direct sunlight. Wrap them with newspaper individually to keep them fresh for a long time.</li>
-          <li>If any apple goes bad, it protects other apples from getting spoiled. Take a cup of water, dissolve 1/8th teaspoon of salt in it. </li>
-          <li>Soak freshly cut slices and drain them. Now, rinse them in fresh water so that they will not taste salty. </li>
-        </ul>
-      </div>
+    <div class="row fav border-top alert alert-light alert-dismissible fade show" role="alert">
+      <p class="info col-2 col-sm-1">1</p>
+      <a href="product.html" class="col-3 col-sm-2 col-md-1"><img src="img/apple.jpg" class="img-fluid"></a>
+      <a href="product.html" class="info product_name text-success col-4 col-lg-5">Apple</a>
+      <p class="info col-sm-2 col-lg-1 d-none d-sm-block">10$/kg</p>
+      <p class="info col-sm-2 d-none d-sm-block">3kg</p>
+      <a type="button" class="close col-2" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </a>
     </div>
-  </div>
+
+    <div class="row fav border-top alert alert-light alert-dismissible fade show" role="alert">
+      <p class="info col-2 col-sm-1">2</p>
+      <a href="product.html" class="col-3 col-sm-2 col-md-1"><img src="img/watermelon.jpg" class="img-fluid"></a>
+      <a href="product.html" class="info product_name text-success col-4 col-lg-5">Watermelon</a>
+      <p class="info col-sm-2 col-lg-1 d-none d-sm-block">10$/kg</p>
+      <p class="info col-sm-2 d-none d-sm-block">3kg</p>
+      <a type="button" class="close col-2" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </a>
+    </div>
+
+    <div class="row fav border-top alert alert-light alert-dismissible fade show" role="alert">
+      <p class="info col-2 col-sm-1">3</p>
+      <a href="product.html" class="col-3 col-sm-2 col-md-1"><img src="img/pear.jpg" class="img-fluid"></a>
+      <a href="product.html" class="info product_name text-success col-4 col-lg-5">Pear</a>
+      <p class="info col-sm-2 col-lg-1 d-none d-sm-block">10$/kg</p>
+      <p class="info col-sm-2 d-none d-sm-block">3kg</p>
+      <a type="button" class="close col-2" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </a>
+    </div>
+
+    <div>
+      <h5 class="creadit_card ml-3 text-secondary">Credit card</h5>
+      <img class="ml-3" src="img/card.png">
+    </div>
+
+    <div class="modal-body">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="email" class="form-control py-2" id="inputEmail4" placeholder="Card holder name *">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="password" class="form-control py-2" id="inputPassword4" placeholder="Card number *">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <select id="inputState" class="form-control" placeholder="Confirm Password">
+              <option selected>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>                
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>                
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <select id="inputState" class="form-control">
+              <option selected>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>                
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+              <option>2028</option>
+              <option>2029</option>
+              <option>2030</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="inputCity" placeholder="CVV*">
+          </div>
+        </div><hr>
+      </form>
+    </div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="First name *">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputPassword4" placeholder="Last name *">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputPassword4" placeholder="Middle name/Initial">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Company">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputPassword4" placeholder="Email *">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputPassword4" placeholder="Phone *">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputCountry" placeholder="Country *">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputCity" placeholder="State *">
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="inputCity" placeholder="City *">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" id="inputAddress" placeholder="Address">
+      </div>
+    </form>
+    <button type="button" class="btn btn-success mb-1"><a href="acceptance.html" id="checkout">Confirm and pay</a></button>
+  </div>      
 </div>
 
-<div id="accordion2">
-  <div class="card border-0">
-    <div class="card-header bg-white" id="headingOne">
-      <button class="btn btn-link text-success" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Overveiw
-      </button>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2">
-      <div class="card-body">
-        <strong class="text-dark">About the Product</strong> <hr>
-        The bright red coloured and heart shaped <br> Red Delicious apples are crunchy,<br> juicy and slightly sweet, are a natural source <br> of fibre and fat free.
-      </div>
-    </div>
-  </div>
-  <div class="card border-0">
-    <div class="card-header bg-white" id="headingTwo">
-      <button class="btn btn-link collapsed text-success" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Raiting
-      </button>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
-      <div class="card-body">
-        
-        <div class="progress mb-2">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress mb-2">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress mb-2">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress mb-2">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div class="progress mb-2">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<h3 class="m-0 p-3 font-weight-bold alert-warning" id="rec">You may also like</h3>
-<div class="row m-0">
-
-  <a href="product.html" class="text-dark" style="text-decoration:none" >
-    <div class="card col-6 col-sm-4 col-md-3 col-lg-2 p-1">
-      <img class="card-img-top pl-3" src="img/berries.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title pl-4">Berries</h5>
-        <p class="card-text pl-4">$8/kg</p>
-        <a href="#" class="btn btn-success ml-4 mt-2">Add to Card</a>
-      </div>
-    </div>
-  </a>
-
-  <a href="product.html" class="text-dark" style="text-decoration:none" >
-    <div class="card col-6 col-sm-4 col-md-3 col-lg-2 p-1">
-      <img class="card-img-top pl-3" src="img/spinach.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title pl-4">Spinach</h5>
-        <p class="card-text pl-4">$2/kg</p>
-        <a href="#" class="btn btn-success ml-4 mt-2">Add to Card</a>
-      </div>
-    </div>
-  </a>
-
-  <a href="product.html" class="text-dark" style="text-decoration:none" >
-    <div class="card col-6 col-sm-4 col-md-3 col-lg-2 p-1">
-      <img class="card-img-top pl-3" src="img/yogurt.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title pl-4">Yogurt</h5>
-        <p class="card-text pl-4">$10/kg</p>
-        <a href="#" class="btn btn-success ml-4 mt-2">Add to Card</a>
-      </div>
-    </div>
-  </a>
-
-  <a href="product.html" class="text-dark" style="text-decoration:none" >
-    <div class="card col-6 col-sm-4 col-md-3 col-lg-2 p-1 d-md-none d-lg-block">
-      <img class="card-img-top pl-3" src="img/potato.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title pl-4">Potato</h5>
-        <p class="card-text pl-4">$0.75/kg</p>
-        <a href="#" class="btn btn-success ml-4 mt-2">Add to Card</a>
-      </div>
-    </div>
-  </a>
-
-  <a href="product.html" class="text-dark" style="text-decoration:none" >
-    <div class="card col-6 col-sm-4 col-md-3 col-lg-2 p-1 d-md-none d-lg-block">
-      <img class="card-img-top pl-3" src="img/beef.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title pl-4">Beef</h5>
-        <p class="card-text pl-4">$14/kg</p>
-        <a href="#" class="btn btn-success ml-4 mt-2">Add to Card</a>
-      </div>
-    </div>
-  </a>
-
-  <a href="product.html" class="text-dark" style="text-decoration:none" >
-    <div class="card col-6 col-sm-4 col-md-3 col-lg-2 p-1 d-md-none d-lg-block">
-      <img class="card-img-top pl-3" src="img/watermelon.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title pl-4">watermelon</h5>
-        <p class="card-text pl-4">$3/kg</p>
-        <a href="#" class="btn btn-success ml-4 mt-2">Add to Card</a>
-      </div>
-    </div>
-  </a>
-
-</div>
 
 <div class="container-fluid">
   <div class="row text-center text-uppercase bg-dark ">
